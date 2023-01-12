@@ -1,0 +1,82 @@
+*
+{
+    padding: 0;
+    Margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-position: center;
+    background-size: cover;
+}
+.navbar
+{
+background-color: rgb(5, 5, 5);
+text-align: right;
+}
+.navbar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.navbar li
+{
+width: 120px; 
+margin: 8px;
+padding: 10px;
+}
+.navbar li a
+{
+   text-decoration: none;
+   color: white; 
+}
+.active, .navbar ul li:hover
+{
+background-color: red;
+border-radius: 2px;
+}
+.navbar, .fa
+{
+    margin-right: 8px;
+}
+.sub-menu-1
+{
+    display: none;
+}
+.navbar ul li:hover .sub-menu-1
+{
+    display: block;
+    position:absolute;
+    background-color: rgb(3, 73, 8);
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.navbar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 8px;
+}
+.navbar ul li:hover .sub-menu-1 ul li
+{
+    width:100px;
+    padding:8px;
+    border-bottom:1px dottod#fff;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+.navbar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.navbar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: aliceblue;
+}
+.logo{
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 10px;
+}
